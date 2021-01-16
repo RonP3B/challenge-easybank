@@ -1,0 +1,54 @@
+@import "blocks/header.scss";
+@import "blocks/hero.scss";
+@import "blocks/menu.scss";
+@import "blocks/why.scss";
+@import "blocks/latestArticles.scss";
+@import "blocks/titles.scss";
+@import "blocks/footer.scss";
+
+@import "base/body.scss";
+@import "base/vars.scss";
+
+.wrapper{
+    padding: 0 var(--wrapperSpace);
+}
+
+
+.copy {
+    line-height: 1.7;
+    font-size: .9em;
+}
+
+.button {
+    border: none;
+    padding: .9em 2.2em;
+    background-image: linear-gradient(to right,var(--limeGreen) 0%, var(--brightCyan) 100%);
+    border-radius: 1.5em;
+    color: var(--white);
+    font-size: 1em;
+    outline: none;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    display: inline-flex;
+
+    &__facebook{
+        background-image: url("../../static/images/icon-facebook.svg");
+    }
+    &__youtube{
+        background-image: url("../../static/images/icon-youtube.svg");
+    }
+    &__twitter{
+        background-image: url("../../static/images/icon-twitter.svg");
+    }
+    &__pinterest{
+        background-image: url("../../static/images/icon-pinterest.svg");
+    }
+    &__instagram{
+        background-image: url("../../static/images/icon-instagram.svg");
+    }
+}
+
