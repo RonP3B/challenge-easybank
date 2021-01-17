@@ -14,6 +14,9 @@
         margin: 0 calc(-1 * var(--wrapperSpace));
         margin-bottom: 1.2em;
     }
+    &__imgSrc {
+        display: none;
+    }
 
     @include tablet {
         text-align: left;
@@ -33,7 +36,7 @@
             min-height: 550px;
             align-items: center;
             grid-template-areas: "description images";
-            grid-template-columns: 480px 1fr;
+            grid-template-columns: 370px 1fr;
             position: relative;
         }
 
@@ -53,9 +56,18 @@
         &__content{
             
         }
+
+        &__imgSrc {
+            display: block;
+            position: relative;
+            top: -150px;
+            z-index: 1;
+        }
+
         &__img {
-            background: url("../../static/images/image-mockups.png") right bottom no-repeat;
-            background-size: 100%;
+            // background: url("../../static/images/image-mockups.png") right bottom no-repeat;
+            // background-size: 100%;
+            background: none;
             left: 150px;
             right: 0;
             top: 0;

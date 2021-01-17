@@ -1,7 +1,9 @@
 .header {
-    display: flex;
-    justify-content: space-between;
     padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    background: var(--white);
+    z-index: 3;
     &__logo {
         align-self: center;
     }

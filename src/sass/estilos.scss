@@ -10,32 +10,13 @@
 @import "blocks/titles.scss";
 @import "blocks/footer.scss";
 @import "blocks/icons.scss";
+@import "blocks/buttons.scss";
+@import "blocks/wrapper-copy.scss";
 
 @import "base/body.scss";
 @import "base/vars.scss";
 
-.wrapper{
-    padding: 0 var(--wrapperSpace);
-    max-width: 1115px;
-    margin: auto;
-    width: 100%;
-}
 
-
-.copy {
-    line-height: 1.7;
-    font-size: .9em;
-}
-
-.button {
-    border: none;
-    padding: .9em 2.2em;
-    background-image: linear-gradient(to right,var(--limeGreen) 0%, var(--brightCyan) 100%);
-    border-radius: 1.5em;
-    color: var(--white);
-    font-size: 1em;
-    outline: none;
-}
 
 
 
