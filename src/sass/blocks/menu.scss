@@ -1,4 +1,18 @@
 .menu {
-    width: 40px;
-    background: url(../../static/images/icon-hamburger.svg) no-repeat center;
+    @include reset-list;
+    display: none;
+    &__button{
+        width: 40px;
+        height: 40px;
+        background: url(../../static/images/icon-hamburger.svg) no-repeat center;
+    }
+    a {
+        @include reset-link;
+    }
+    @include desktop {
+        display: flex;
+        &__button {
+            display: none;
+        }
+    }  
 }

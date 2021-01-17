@@ -1,6 +1,8 @@
 .hero {
     text-align: center;
     padding-bottom: 5em;
+    background: var(--lightGray);
+    
     .copy {
         margin-bottom: 2.5em;
     }
@@ -11,5 +13,52 @@
         background-size: 345px, cover;
         margin: 0 calc(-1 * var(--wrapperSpace));
         margin-bottom: 1.2em;
+    }
+
+    @include tablet {
+        text-align: left;
+        background: url("../../static/images/bg-intro-desktop.svg") left 650px top -290px no-repeat;
+        background-size: cover;
+        min-height: 550px;
+        box-sizing: border-box;
+
+        .title{
+            &__h1 {
+                text-align: left;
+            }
+        }
+
+        &__content {
+            display: grid;
+            min-height: 550px;
+            align-items: center;
+            grid-template-areas: "description images";
+            grid-template-columns: 480px 1fr;
+            position: relative;
+        }
+
+        &__img {
+            grid-area: images;
+            height: 768px;
+            width: 500px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url("../../static/images/image-mockups.png") left bottom no-repeat;
+            background-size: cover;
+        }
+    }
+
+    @include desktop {
+        &__content{
+            
+        }
+        &__img {
+            background: url("../../static/images/image-mockups.png") right bottom no-repeat;
+            background-size: 100%;
+            left: 150px;
+            right: 0;
+            top: 0;
+        }
     }
 }

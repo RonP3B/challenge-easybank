@@ -1,3 +1,7 @@
+@import "mixins/reset-link.scss";
+@import "mixins/reset-list.scss";
+@import "mixins/breakpoints.scss";
+
 @import "blocks/header.scss";
 @import "blocks/hero.scss";
 @import "blocks/menu.scss";
@@ -5,12 +9,16 @@
 @import "blocks/latestArticles.scss";
 @import "blocks/titles.scss";
 @import "blocks/footer.scss";
+@import "blocks/icons.scss";
 
 @import "base/body.scss";
 @import "base/vars.scss";
 
 .wrapper{
     padding: 0 var(--wrapperSpace);
+    max-width: 1115px;
+    margin: auto;
+    width: 100%;
 }
 
 
@@ -29,26 +37,5 @@
     outline: none;
 }
 
-.icon{
-    width: 25px;
-    height: 25px;
-    background-repeat: no-repeat;
-    display: inline-flex;
 
-    &__facebook{
-        background-image: url("../../static/images/icon-facebook.svg");
-    }
-    &__youtube{
-        background-image: url("../../static/images/icon-youtube.svg");
-    }
-    &__twitter{
-        background-image: url("../../static/images/icon-twitter.svg");
-    }
-    &__pinterest{
-        background-image: url("../../static/images/icon-pinterest.svg");
-    }
-    &__instagram{
-        background-image: url("../../static/images/icon-instagram.svg");
-    }
-}
 

@@ -30,4 +30,27 @@
         display: grid;
         row-gap: 2em;
     }
+
+    @include tablet {
+        .title__h1{
+            text-align: left;
+            margin-bottom: 1em;
+        }
+        &__item{
+            &__content {
+                padding: 1em;
+            }
+        }
+
+        &__grid {
+            column-gap: 30px;
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+
+    @include desktop {
+        &__grid {
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
 }

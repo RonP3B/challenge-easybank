@@ -1,5 +1,27 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 1em 1.5em;
+    padding: 1em 0;
+    &__logo {
+        align-self: center;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .button {
+        display: none;
+    }
+    @include desktop {
+        .button {
+            display: inline;
+        }
+
+        &__content{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }

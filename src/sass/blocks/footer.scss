@@ -2,7 +2,7 @@
     background: var(--darkBlue);
     padding: 2em 0;
     text-align: center;
-    img{
+    &__logo{
         display: block;
         margin: auto;
         margin-bottom: 2em;
@@ -16,16 +16,46 @@
         margin: 2.5em 0;
     }
     &__contact{
-        display: flex;
-        flex-direction: column;
+        display: grid;
         a{
+            @include reset-link;
             color: var(--gray);
-            text-decoration: none;
             margin-bottom: 2em;
         }
     }
     &__copyright {
         color: var(--grayBlue);
         margin-top: 2.5em;
+    }
+
+    @include desktop {
+        .wrapper {
+            display: grid;
+            grid-template-columns: 200px 1fr 400px;
+            grid-template-areas: 
+            "logo links button"
+            "social links copyright";
+            column-gap: 7em;
+        }
+        &__contact {
+            grid-area: links;
+            grid-template-columns: repeat(2,1fr);
+            justify-items: start;
+        }
+        &__logo {
+            grid-area: logo;
+            margin: initial;
+        }
+        &__social {
+            grid-area: social;
+        }
+        &__button {
+            grid-area: button;
+            text-align: right;
+        }
+        &__copyright {
+            grid-area: copyright;
+            text-align: right;
+        }
     }
 }

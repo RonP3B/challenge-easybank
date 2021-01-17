@@ -1,0 +1,22 @@
+.icon{
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    display: inline-flex;
+
+    &__facebook{
+        background-image: url("../../static/images/icon-facebook.svg");
+    }
+    &__youtube{
+        background-image: url("../../static/images/icon-youtube.svg");
+    }
+    &__twitter{
+        background-image: url("../../static/images/icon-twitter.svg");
+    }
+    &__pinterest{
+        background-image: url("../../static/images/icon-pinterest.svg");
+    }
+    &__instagram{
+        background-image: url("../../static/images/icon-instagram.svg");
+    }
+}
